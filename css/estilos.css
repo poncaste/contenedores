@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menuprincipal{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1px;
+    font-weight: bold;
+}
+
+
+a{
+    text-decoration: none;
+    font-size: 15px; 
+    color: inherit;
+}
+
+li{
+    display:inline-block;
+    padding: 5px ;
+}
+
+.logos{
+    width: 20px;
+    height: 20px;
+}
+
+
+.container {  
+    display: grid;
+    grid-template-columns: 1.8fr 0.2fr;
+    grid-template-rows: 0.3fr 3.3fr 0.2fr;
+    gap: 10px 6px;
+    grid-template-areas:
+      "menu redes"
+      "principal principal"
+      "rodapie rodapie";
+  }
+  
+  .menu { 
+    grid-area: menu;
+    display:flex;
+    justify-content:left;
+ }
+  
+  .redes { 
+    grid-area: redes; 
+    display: flex;
+    justify-content:right;
+}
+  
+  .principal { 
+    grid-area: principal; 
+    display: flex;
+    justify-content: center;
+    
+}
+
+.imagenprincipal{
+    justify-content: center;
+}
+ 
+h1{
+    text-align: center;
+    font-weight: 5;
+}
+
+footer {
+    grid-area: rodapie; 
+    display: flex;
+    justify-content:right;
+    padding-top: 20px;
+   
+}
