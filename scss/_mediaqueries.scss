@@ -1,0 +1,65 @@
+
+/* RESPONSIVE Tamaño celular 500px o menos */
+@media screen and (max-width: 500px ){
+
+
+    /* ----------------- MOBILE Modulo -----------------*/
+    .principalModulo {
+        grid-template-columns: 1fr; 
+        grid-template-rows: 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr; 
+        gap: 0px 0px;
+        grid-template-areas: 
+          "textModulo"
+          "img1"
+          "txt1"
+          "img2"
+          "txt2"
+          "img3"
+          "txt3"; 
+        }
+        .textModulo { 
+
+        height: 0vh;
+        }
+    
+
+
+
+    /* ----------------- MOBILE Servicio -----------------*/
+    .principalServicios {
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr; 
+        grid-template-areas: 
+            "textservicio textservicio textservicio"
+            "servicio1 servicio1 servicio1"
+            "servicio2 servicio2 servicio2"
+            "servicio3 servicio3 servicio3"; 
+    }
+
+    .textservicio { 
+        height: 30vh;
+    }
+
+    .servicio1 { 
+        height: 35vh;
+    }
+
+    .servicio2 { 
+        height: 35vh;
+    }
+
+    .servicio3 { 
+        height: 35vh;
+    }
+
+
+    /* ----------------- MOBILE CONTACTO -----------------*/
+    .principalContacto {
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        grid-template-areas: 
+          "formulario formulario formulario"
+          "contacto contacto contacto"; 
+     }
+
+} 
