@@ -9,13 +9,23 @@ li {
   list-style-type: none;
 }
 
+.img-fluid {
+  width: 350px;
+  height: 350px;
+}
+
+.d-inline-block {
+  width: 30px;
+  height: 30px;
+}
+
 /*-------------------- Container General ----------------- */
 .container {
   display: grid;
   grid-template-columns: 2.7fr;
   grid-template-rows: 0.5fr 3.5fr 0.1fr;
   gap: 10px 6px;
-  grid-template-areas: "menu menu" "principal principal" "rodapie rodapie";
+  grid-template-areas: "menu" "principal" "rodapie";
 }
 
 /*----------------- Container Empresa -----------------*/
